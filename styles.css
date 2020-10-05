@@ -1,0 +1,154 @@
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(124deg, #d45c49, #be7575, #bda452, #999b5d, #61a56c, #64a4a7, #817db6, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.buttonContainer {
+  font-family: 'Prata', serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 30%; /* Can be in percentage also. */
+  height: auto;
+  margin: auto;
+  margin-top: 7%;
+  padding: 1%;
+  background-color: rgba(255, 255, 255, 0.35);
+  position: relative;
+  justify-content: center; 
+  align-items: center;
+}
+
+.alignVertical {
+  position:relative;
+  display:inline-block;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+
+#name {
+  text-decoration: underline rgb(128, 206, 109);
+}
+
+#avatar { 
+    border-radius: 50%;
+    height: 25%;
+    width: 25%;
+    display: block;
+    margin-bottom: 3%;
+    margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: .95;
+}
+
+.buttons {
+  padding-top: .75em;
+  font-family: 'Roboto', sans-serif;
+  font-size: .5em;
+  margin-left:35%;
+  margin-right: 35%;
+  margin-bottom: 8%;
+}
+
+#button {
+  color: rgb(255, 255, 255);
+  text-decoration: underline rgb(185, 105, 131);
+  background: rgba(255, 255, 255, 0.35); 
+  text-align: center;
+  border-bottom: 3% black ;
+  font-size: 1.25em;
+  border: 0;
+}
+
+#button:hover {
+  color: rgb(185, 105, 131);
+  text-decoration: underline rgb(255, 255, 255);
+}
+
+a {
+  margin: 1%;
+}
+
+/* adjust size for smaller screens to reduce overflow*/
+
+@media only screen and (max-width:1050px){
+
+  .buttonContainer {
+    font-family: 'Prata', serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 40%; /* Can be in percentage also. */
+    height: auto;
+    margin: auto;
+    margin-top: 8%;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.35);
+    position: relative;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  #name {
+    text-decoration: underline rgb(128, 206, 109);
+  }
+
+  .buttons {
+    padding-top: .75em;
+    font-family: 'Roboto', sans-serif;
+    margin-left:25%;
+    margin-right: 25%;
+    margin-bottom: 8%;
+  }
+
+  #button {
+    color: rgb(255, 255, 255);
+    text-decoration: underline rgb(185, 105, 131);
+    background: rgba(255, 255, 255, 0.35); 
+    text-align: center;
+    border-bottom: 3% black ;
+    font-size: 1.25em;
+    border: 0;
+  }
+}
+
